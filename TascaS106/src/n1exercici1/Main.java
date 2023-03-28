@@ -5,6 +5,16 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		Object obj1 = new Object();
+		Object obj2 = new Object();
+		Object obj3 = new Object();
+		
+		NoGenericMethods ngm = new NoGenericMethods(obj1, obj2, obj3);
+		System.out.println(ngm.toString());
+		
+		NoGenericMethods ngm2 = new NoGenericMethods(obj2, obj3, obj1);
+		System.out.println(ngm2.toString());
+		
 	}
 
 	

@@ -2,9 +2,17 @@ package n1exercici2;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static <T, V, U> void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		
+		Byte b1 = 28;
+		Persona p1 =  new Persona("Kaiden", "Garcia", b1);
+		String s1 = "Hello World";
+		
+		GenericMethods<Byte, Persona, String> gm = new GenericMethods<>();
+		
+		gm.impresioGenerica(b1, p1, s1);
+		
 	}
 
 	/*
